@@ -28,11 +28,12 @@
             <CollectionView ItemsSource="{Binding Citys}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout>
-                                <Label Text="{Binding Nome}"></Label>
-                                <Label Text="{Binding Estado}"></Label>
-                                <Label Text="{Binding Id}"></Label>
-                            </StackLayout>
+                        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Margin="5">
+                            <Label Text="{Binding Nome}" WidthRequest="200" Margin="10" FontSize="20"></Label>
+                            <Label Text="{Binding Estado}" WidthRequest="200" FontSize="20"></Label>
+                            <Label Text="{Binding Id}" WidthRequest="200" FontSize="20"></Label>
+                            <Button WidthRequest="150" HeightRequest="20" Text="Ver clima" Margin="10"></Button>
+                        </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
